@@ -1,4 +1,4 @@
-# Car.py
+# Truck.py
 
 class Truck(Vehicle):
 
