@@ -4,6 +4,8 @@ from vehicle import Vehicle
 
 class Motorcycle(Vehicle):
 
+    type_name = "motorcycle"
+    
     def __init__(self):
         super().__init__("Motorcycle")
         
