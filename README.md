@@ -1,9 +1,9 @@
 # **Project Name**
 
-## **1. Service Overview**
+## **1. Python Vehicle Project**
 
 - **Version:** [Current version number]
-- **Author:** [Your name]
+- **Author:** Shalev Mashiah
 
 
 ### **Badges**
@@ -11,13 +11,24 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)  [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)  [![Docker](https://img.shields.io/badge/Docker-Compose-blue)](https://www.docker.com/)  [![Kafka](https://img.shields.io/badge/Kafka-Integrated-yellow)](https://kafka.apache.org/)
 
 ### **Description**
-  [Provide a brief description of what this service does and its main purpose]
+ this project demonstrates Object-Oriented Programming (OOP) principles in Python by simulating different vehicle types.
+
+Each vehicle:
+
+Inherits from the abstract base class Vehicle
+
+Implements its own start_engine() behavior
+
+Can be created dynamically using the Factory Design Pattern
+
+The project follows the Open-Closed Principle (OCP):
+New vehicle types can be added without modifying the Factory class.
 
 ## **2. Service Architecture**
 
 ### **Tech Stack/Framework:** 
 This project was built using the following technologies: 
-  - Kafka-python: Kafka producer for inter-service communication.
+  - none
 
 ### **Dependencies/Features:**
   - Command Execution: Routes and executes commands from the client with Kafka integration for messaging.
