@@ -1,13 +1,14 @@
 # main.py
 
-from car import Car
-from factory import Factory
-from truck import Truck
-from motorcycle import Motorcycle
+
+from model.data_classes.car import Car as car
+from model.data_classes.motorcycle import Motorcycle
+from model.data_classes.truck import Truck as truck
+from infrastructure.factories.vehicle_factory import Vehicle_Factory 
 
 def main():
-    V1 = Car()
-    V2 = Truck()
+    V1 = car()
+    V2 = truck()
     V3 = Motorcycle()
     V1.start_engine()
     V2.start_engine()
@@ -18,7 +19,7 @@ def main():
     vehicles = []
 
     for type in types:
-        vehicles.append(Factory.create(type))
+        vehicles.append(Vehicle_Factory.create(type))
         
     for vehicle in vehicles:
         if vehicle:
