@@ -5,7 +5,6 @@ from infrastructure.api.controllers.example_controller import ExampleController
 from infrastructure.api.routers.example_router import ExampleRouter
 from infrastructure.interfaces.iapi_router import IApiRouter
 
-
 class ApiFactory:
     @staticmethod
     def create_routers() -> List[IApiRouter]:

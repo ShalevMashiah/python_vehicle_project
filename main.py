@@ -1,6 +1,5 @@
 # main.py
 
-
 from model.data_classes.car import Car as car
 from model.data_classes.motorcycle import Motorcycle
 from model.data_classes.truck import Truck as truck
