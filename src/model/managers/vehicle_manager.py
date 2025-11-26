@@ -1,5 +1,3 @@
-#vehicle_manager
-
 from typing import List
 from infrastructure.interfaces.ivehicle_manager import IVehicleManager
 from infrastructure.factories.vehicle_factory import VehicleFactory
@@ -7,7 +5,7 @@ from model.data_classes.vehicle import Vehicle
 
 
 class VehicleManager(IVehicleManager):
-    def _init_(self):
+    def __init__(self):
         self._vehicles: List[Vehicle] = []
 
     def create_vehicle(self, vehicle_type: str):
@@ -26,3 +24,4 @@ class VehicleManager(IVehicleManager):
         print("\nStarting all engines...\n")
         for v in self._vehicles:
             v.start_engine()
+
