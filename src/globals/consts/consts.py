@@ -1,3 +1,0 @@
-class Consts:
-    SEND_MESSAGE_DURATION = 1
-    ZMQ_SERVER_LOOP_DURATION = 0.01
