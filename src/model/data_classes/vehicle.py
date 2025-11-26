@@ -3,11 +3,10 @@
 from abc import ABC, abstractmethod
 
 class Vehicle(ABC):
+    type_name: str = ""
 
-    type_name = ""
-    def __init__(self, vehicle_type):
+    def __init__(self, vehicle_type: str):
         self.type_name = vehicle_type
-        
 
     @abstractmethod
     def start_engine(self):
