@@ -1,14 +1,17 @@
-# Motorcycle.py
-
 from .vehicle import Vehicle
+from globals.consts.logger_messages import LoggerMessages
+from infrastructure.factories.logger_factory import LoggerFactory
+from globals.consts.const_strings import ConstStrings
 
 class Motorcycle(Vehicle):
-    type_name = "motorcycle"
 
+    type_name = "motorcycle"
     def __init__(self):
         super().__init__("Motorcycle")
+        self._logger = LoggerFactory.get_logger_manager()
 
     def start_engine(self):
-        print("Motorcycle Engine started ===> Vroom Vroom!")
+        self._logger.log(ConstStrings.LOG_NAME_DEBUG,LoggerMessages.ENGINE_STARTED.format(self.type_name))
+
 
 
