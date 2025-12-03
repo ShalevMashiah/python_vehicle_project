@@ -9,9 +9,9 @@ class VehicleFactory:
     def create(vehicle_type: str) -> Vehicle | None:
         type_name = vehicle_type.lower()
 
-        for i in Vehicle.__subclasses__():
-            if i.type_name.lower() == type_name:
-                return i()
+        for vehicle in Vehicle.__subclasses__():
+            if vehicle.type_name.lower() == type_name:
+                return vehicle()
 
         print(f"Vehicle type '{vehicle_type}' is not recognized.")
         return None
