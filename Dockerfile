@@ -8,5 +8,8 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 # add install if needed 
 
 COPY src/ ./src
+COPY logs/ ./logs
+
+VOLUME ["/app/logs"]
 
 CMD ["python", "-u", "src/main.py"]
